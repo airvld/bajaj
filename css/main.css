@@ -39,7 +39,9 @@ body,section  {
 }
 body {
     background: #F4F4F4!important;
+    overflow-x: hidden!important;
 }
+
 a:hover,a:active {
     color: #fff!important;
 }
@@ -949,6 +951,12 @@ gap: 20px;
     width: 220px;
     align-items: center;
 }
+#radiusPlansBlock100 {
+    max-width: 100%;
+    width: 100%;
+    padding: 25px 25px 25px 40px;
+}
+
 #smallWidthPlan {
     width: 130px;
 }
@@ -962,6 +970,9 @@ p.titlePlans {
     color: #333333;
     font-weight: 300;
     margin-bottom: 3px;
+}
+#titlePlans2 {
+    font-size: 18px;
 }
 p.titlePlans>span {
     font-weight: 400;
@@ -987,6 +998,10 @@ h3.pricePlan>span {
 #saleGreenBlock1 {
     position: relative;
     margin-bottom: -20px;
+}
+#saleGreenBlock2 {
+    position: relative;
+    margin-bottom: -38px;
 }
 .activeCheck {
     margin-bottom: 10px;
@@ -1368,6 +1383,142 @@ p.pricePlan2 {
 
 body > div > div:nth-child(5) {
     border-radius: 0 0 8px 8px;
+}
+div.blackCircleBack {
+    position: absolute;
+    right: -33px;
+    top: -320px;
+    width: 729px;
+    height: 777px;
+    background: #000000;
+    opacity: 0.7;
+    border-radius: 500px;
+    z-index: 123123123;
+}
+button.whiteBorder {
+    font-size: 20px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 8px 30px;
+    position: absolute;
+    top: 600px;
+    right: 280px;
+    z-index: 1231231212312;
+    border: 1.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+.blackCircleBack > p {
+    font-size: 24px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    font-weight: 700;
+    position: absolute;
+    top: 510px;
+    right: 140px;
+    max-width: 470px;
+}
+#titleBlockAbout2 {
+    margin-top: 25px;
+    font-weight: 400;
+}
+p.yearlyPlanTitle {
+    font-size: 14px;
+    line-height: 10px;
+    color: #000000;
+    margin-bottom: 9px;
+    margin-top: 3px;
+}
+p.yearlyPlanSubtitle {
+    font-size: 14px;
+    line-height: 10px;
+    color: #999999;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+.checkAbout {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+}
+div#borderPlanAbsolute2 {
+    padding: 20px 20px 30px 20px;
+}
+img.saleBlockAbout {
+    width: 35px;
+    height: 35px;
+}
+.borderPlanAbsolute.noLine {
+    border: none;
+}
+#aboutPlanAbsolute2 {
+    height: fit-content;
+    max-height: 100%;
+}
+.getMoney {
+    margin-right: 15px;
+    width: 46px;
+    height: 46px;
+}
+p.choiceText {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+p#choiceText2 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #666666;
+}
+.choiceImg {
+    margin-bottom: 5px;
+    width: 28px;
+    height: 28px;
+}
+#whiteHeaderBlock4 div.plansLayout {
+    padding: 20px 90px 50px 90px!important;
+}
+.plansLayout.plansLayout2 {
+    padding: 20px 60px 50px 20px;
+}
+div#whiteHeaderBlock2\ whiteHeaderBlock4 {
+    min-height: 300px;
+    /* height: 309px; */
+}
+div#saleGreenBlock2 {
+    width: fit-content;
+    padding: 5px 30px;
+}
+p#titlePlans3 {
+    font-size: 16px;
+    line-height: 12px;
+    color: #333333;
+    font-weight: 400;
+}
+.textPlansPremium {
+    width: 100%;
+}
+#textPlans {
+    font-size: 12px;
+    line-height: 130%;
+    color: #666666;
+    max-width: 360px;
+}
+#choiceImg25 {
+    width: 25px;
+    height: 25px;
 }
 @media screen and (max-width:1400px) {
     .whiteLinks > a {
@@ -1751,18 +1902,26 @@ a.rightBtnSlider,a.leftBtnSlider {
 .chooseBlock.d-flex.justify-content-center.align-content-center.flex-column {
     width: 100%;
 }
-
-
-body {
-    overflow-x: hidden!important;
-}
-
 section.sliderChoose {
     overflow-x: hidden;
 }
 
 }
 @media screen and (max-width:420px) {
+    div#aboutPlanAbsolute2 {
+        top: 470px;
+    }
+    p.yearlyPlanTitle {
+        font-size: 12px;
+    }
+
+    p.yearlyPlanSubtitle {
+        font-size: 12px;
+    }
+
+    h2#titleBlockAbout2 {
+        font-size: 18px;
+    }
     p.titlePlan,p.pricePlan {
         font-size: 14px;
     }
