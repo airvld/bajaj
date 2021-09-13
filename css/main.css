@@ -157,6 +157,12 @@ section.head2 {
     width: 100%;
     background: linear-gradient(180deg, #258BCE 0%, #0475BE 100%);
 }
+section.headSmall {
+    padding-top: 20px;
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(180deg, #258BCE 0%, #0475BE 100%);
+}
 h1.head {
     font-weight: bold;
     font-size: 24px;
@@ -221,6 +227,18 @@ h2.title,h2.title2 {
     color: #999999;
     text-align: center;
 }
+h2.title28 {
+    font-size: 28px;
+line-height: 117%;
+/* or 33px */
+
+text-align: center;
+
+color: #333333;
+}
+.textUnderTitle >span.color {
+    font-weight: 300;color: #000;
+}
 h2.title > span {
     color: #222222;
     font-weight: 300;
@@ -240,6 +258,8 @@ input.head {
     min-width: 220px;
     width: 90%;
     outline: none;
+    padding: 0px;
+    font-weight: 400;
 }
 input.head2,select.education {
     min-width: 220px;
@@ -261,7 +281,7 @@ input.head2,select.education,select.FreeQuote {
     margin-bottom: 0;
     margin-left: 3px;
 }
-.saleGreenBlock,.saleGreenBlock2 {
+.saleGreenBlock,.saleGreenBlock2,.saleGreenBlock3 {
     width: 90%;
     height: 25px;
     background: #DCFFEE;
@@ -269,19 +289,24 @@ input.head2,select.education,select.FreeQuote {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 123;
 }
 .saleGreenBlock2 {
     width: fit-content;
     margin-bottom: 25px;
 }
-.saleGreenBlock  > p, .saleGreenBlock2  > p {
+.saleGreenBlock3 {
+    width: fit-content;
+    margin-top: -40px;
+}
+.saleGreenBlock  > p, .saleGreenBlock2  > p,.saleGreenBlock3  > p {
     font-size: 11px;
     margin-bottom: 0;
     line-height: 10px;
     letter-spacing: 0.02em;
     color: #28843C;
 }
- .saleGreenBlock2  > p {
+ .saleGreenBlock2  > p, .saleGreenBlock3  > p {
     padding:  0px 20px;
 }
 div.premiumTitle {
@@ -443,6 +468,7 @@ height: 40px;
 }
 .flex33 {
     display: flex;
+    justify-content: space-around;
 }
 .circleAdv {
     width: 70px;
@@ -1865,6 +1891,8 @@ p.downloadText > a{
 }
 #proceedToPay2 {
     margin-top: 25px;
+    margin: 0 auto;
+    text-transform: uppercase ;
 }
 img.paymentOK {
     width: 62px;
@@ -1978,8 +2006,893 @@ p.customerChoise {
     width: 100%;
 }
 a.questChoise {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    color: #1C86F0;
+    text-decoration: none;
+    padding-right: 30px;
+}
+a.questChoise:hover {
+    color: #1C86F0;
+    text-decoration: underline;
+}
+div.questionsChoise {
+    margin-top: 15px;
+}
+h1.titleInWhiteBlock {
+    font-size: 28px;
+    line-height: 117%;
+    color: #999999;
+    font-weight: 400;
+}
+h1.titleInWhiteBlock > span {
+    color: #222222;
+}
+.yelowBorderBlock {
+    border: 0.5px solid #E1B90C;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 4px 12px 4px 4px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.yelowBorderBlock > img {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+p.yelowText {
+    font-size: 12px;
+    line-height: 26px;
+    color: #E1B90C;
+    margin-bottom: 0;
+}
+.greyBorederCheck {
+    background: #FFFFFF;
+    position: relative;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px 45px 10px 30px;
+}
+.greyBorederCheck.active {
+    border: 1px solid #0FD381;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+img#first-check {
+    margin-top: 20px;
+}
+h1.titleOption {
+    font-size: 16px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-left: 13px;
+    margin-bottom: 0;
+}
+img.smallInfo {
+    width: 16px;
+    height: 16px;
+    margin-left: 7px;
+}
+img.clockOption {
+    margin-left: 12px;
+    width: 12px;
+    height: 12px;
+}
+p.textClockOption {
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #666666;
+    margin-bottom: 0;
+    margin-left: 2px;
+}
+p.optionText {
+    font-size: 14px;
+    line-height: 130%;
+    color: #666666;
+    margin-left: 13px;
+    font-weight: 300;
+    max-width: 410px;
+    width: 410px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+img.checkOption {
+    margin-top: 15px;
+    width: 28px;
+    height: 28px;
+    margin-left: 35px;
+}
+a.documentsOption {
+    font-size: 14px;
+    line-height: 120%;
+    color: #1C86F0;
+    margin-left: 13px;
+    text-decoration: none;
+    margin-top: 1px;
+}
+div.quickIssuance {
+    background: #FFF9F1;
+    border: 1px solid #F58220;
+    box-sizing: border-box;
+    border-radius: 50px 0 0 50px;
+    padding: 5px 13px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+div.quickIssuance > p {
+    font-size: 10px;
+    line-height: 120%;
+    color: #F58220;
+    margin-bottom: 0;
+}
+#whiteHeaderBlock7 {
+   padding-top: 10px; 
+   padding: 0px 150px;
+   padding-top: 10px;
+}
+#whiteHeaderBlock7 >h2.title, #whiteHeaderBlock7 >h2.title>span {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+#whiteHeaderBlock8 {
+    padding: 0px;
+}
+#whiteHeaderBlock9 {
+    width: 1000px;
+}
+p.underTitle {
+    font-size: 14px;
+    line-height: 117%;
+    color: #666666;
+    text-align: center;
+    font-weight: 300;   
+}
+#whiteHeaderBlock7 form.head {
+    margin-top: 30px;
+}
+.littleTextOverInput {
+    font-size: 12px;
+    line-height: 9px;
+    color: #333333;
+    font-weight: 300;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+img.checkOK {
+    position: relative;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+img.checkOK2 {
+    position: relative;
+    margin-top: -5px;
+    width: 12px;
+    height: 10px;
+}
+#genderText2 {
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 400;
+    color: #222222;
+}
+#whiteHeaderBlock7 select.education {
+    margin-bottom: 0px!important;
+}
+#whiteHeaderBlock7 input.head {
+ min-width: 100px;
+}
+p.questionWhiteBlock {
+    font-size: 14px;
+    line-height: 10px;
+    color: #666666;
+    font-weight: 300;
+    margin-top: 13px;
+}
+p.textRadio {
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: capitalize;
+    color: #423D3D;
+    margin-left: 3px;
+}
+input.radio {
+    width: 13px;
+    height: 13px;
+}
+.greyIbfoBlock {
+    background: #444855;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 80px;
+    padding: 10px 35px 15px 35px;
+    margin-top: 45px;
+    align-items: center;
+}
+p.greyBlockText {
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    max-width: 400px;
+    margin-bottom: 0;
+}
+.hrWhite50{
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+    height: 38px;
+}
+.greyIbfoBlock >p.ok {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-left: 33px;
+    margin-bottom: 0;
+}
+h2.popupCheckTitle {
+    font-size: 16px;
+    line-height: 12px;
+    color: #000000;
+    font-weight: 400;
+}
+#whitePopupBlock501588 {
+    padding: 25px 90px;
+}
+p.or {
+    font-size: 16px;
+    line-height: 12px;
+    color: #333333;
+    margin-top: 15px;
+}
+p.detailsBankText {
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 300;
+    color: #333333;
+}
+#proceedToBankDeatails {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+a.closeBtn {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}
+div.bankDetails {
+    margin-top: 10px;
+}
+p.bankDetails {
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 300;
+    color: #666666;
+    margin-bottom: 8px;
+}
+p.bankDetailsText {
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    font-weight: 300;
+}
+p.bankDetailsText >span {
+    color: #222;
+    font-weight: 400;
+}
+#flex502 {
+    margin-top: 40px;
+}
+p.textQuestionBlock {
+    max-width: 560px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #666666;
+margin-bottom: 0;
+}
+p.yesText {
+    font-size: 16px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #666666;
+    margin-left: 5px;
+    margin-bottom: 0;
+    padding-right: 20px;
+}
+.yesImg {
+    width: 28px;
+    height: 28px;
+}
+hr.greyUnderLine {
+    opacity: 0.1;
+    border: 1px solid #000000;
+    margin: 22px 0px;
+}
+hr.greyUnderLine2 {
+    opacity: 0.1;
+    border: 1px solid #000000;
+    margin: 15px 0px;
+}
+hr.greyUnderLine3 {
+    opacity: 0.1;
+    border: 1px solid #000000;
+    margin: 15px 0px;
+    width: 110%;
+    height: 1px;
+}
+.QuestionBlock {
+    padding: 0px 22px ;
+    padding-bottom: 0px;
+}
+p.underQuestionAnswer {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #333333;
+    padding-left: 22px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+a.editInformation {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #0072BC;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+img.infoSmall {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+}
+input#head3 {
+    max-width: 220px;
+    margin-left: 25px;
+}
+p.textOverINput {
+    font-size: 12px;
+    line-height: 9px;
+    color: #333333;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.smallInputs {
+margin: 0 20px;
+}
+#head3FT {
+margin-left: 0!important;
+width: 30px;
+min-width: 30px;
+margin-right: 10px;
+}
+#head3KG {
+
+    margin-left: 0!important;
+width: 67px;
+min-width: 67px;
+margin-right: 10px;
+}
+.textQuestionBlock.opacity {
+    opacity: 0.5;
+}
+p.greenTextUnderQuestion {
+    margin-bottom: 0;
+    margin-left: 22px;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #08AA2B;
+    margin-top: 10px;
     
 }
+p.textAroundchecboxInput {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    letter-spacing: 0.02em;
+
+    color: #666666;
+}
+input.greenCheckbox {
+    margin-top: 3px;
+}
+a.linkUnderTitle {
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #0072BC;
+}
+
+a.linkUnderTitle:hover {
+    text-decoration: underline;
+    color: #0072BC!important;
+}
+.greyRediusBlock {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 25px 130px;
+    padding: 10px;
+}
+.greyRediusBlock p.callCheckText {
+    margin-bottom: 0;
+}
+p.otpText {
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #666666;
+}
+p.otpText >span {
+    color: #333;
+}
+#whiteHeaderBlock8  {}
+.otpBetween {
+    width: 327px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+div.otp100 {
+    width: 327px;
+    height: 3px;
+    background: #DAD7D7;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+.otpBetween img {
+    width: 14px;
+    height: 14px;
+}
+p.clockHistory {
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 0;
+    margin-left: 4px;
+}
+a.recentOtp {
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    color: #0072BC;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+a.recentOtp:hover {
+    color: #0072BC!important;
+    text-decoration: underline;
+}
+div.accordion {
+    padding: 17px 45px;
+}
+p.accordionTitle {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #666666;
+    margin-bottom: 0;
+}
+.textUnderTitle {
+    font-size: 16px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #666666;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 11px;
+}
+p.textUnderTitle >span {
+    font-weight: 400;
+}
+p.textUnderTitle2 {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #666666;
+    text-align: center;
+}
+a.showMore {
+    font-size: 14px;
+    line-height: 16px;
+    color: #0072BC;
+    text-decoration: none;
+}
+a.showMore:hover {
+    color: #0072BC!important;
+    text-decoration: underline;
+}
+a.showMore2 {
+    font-size: 12px;
+line-height: 117%;
+    color: #0072BC;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 8px;
+}
+a.showMore2:hover {
+    color: #0072BC!important;
+    text-decoration: none;
+}
+.greyRadiusBlock {
+    background: #FFFFFF;
+    border: 1px solid #DAD7D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    min-height: 110px;
+    position: relative;
+    padding-top: 22px;
+}
+.greyRadiusBlock2 {
+    background: #FFFFFF;
+    border: 1px solid #DAD7D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    min-height: 110px;
+    position: relative;
+    max-width: 500px;
+    margin-top: 0 auto!important;
+}
+.greyRadiusBlock3 {
+    background: #FFFFFF;
+    border: 1px solid #DAD7D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 5px 25px;
+    margin-top: 10px;
+    min-height: 20px;
+    position: relative;
+    max-width: 500px;
+    margin-top: 0 auto!important;
+}
+p.proofText {
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-bottom: 0;
+    min-width: 115px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+img.proof {
+    max-width: 52px;
+    max-height: 52px;
+    margin: 0 auto;
+}
+.saleGreenBlock4,.saleGreenBlock5 {
+    background: #DCFFEE;
+    border-radius: 50px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: -15px;
+    width: fit-content;
+    justify-content: center;
+}
+.saleGreenBlock5 {
+    width: 90%;
+}
+.saleGreenBlock4 > p,.saleGreenBlock5 > p {
+    font-size: 12px;
+    line-height: 117%;
+    color: #28843C;
+    margin-bottom: 0;
+    
+}
+.opacity5 {
+    opacity: 0.5;
+}
+p.uploadPhoto {
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #666666;
+    margin-bottom: 0;
+}
+p.uploadPhoto > span {
+    font-size: 24px;
+    margin-bottom: 0;
+    top: 7px;
+    position: relative;
+    margin-right: 3px;
+}
+a.uploadDocs {
+    font-size: 14px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #0072BC!important;
+    text-decoration: none;
+    
+}
+a.uploadDocs  >img {
+    margin-right: 5px;
+}
+p.orUpload {
+    font-size: 14px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-bottom: 0;
+}
+a.uploadDocs  >img:last-child {
+    margin-top: -5px;
+}
+.greyRadiusBlock.active {
+    border: 1px solid #0FD381;
+box-sizing: border-box;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+img.greyRadiusDone {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.absoluteImgGray {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+p.selectAgeProof {
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    font-weight: 300;
+}
+p.inputVariantText {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #333333;
+    margin-bottom: 0;
+    margin-left: 7px;
+    font-weight: 400;
+}
+.variantSelectAgeLayout a.uploadDocs>img {
+    width: 15px;
+    height: 15px;
+}
+.variantSelectAgeLayout a.uploadDocs  >img:last-child {
+    margin-top: -2px;
+}
+.variantSelectAgeLayout p.orUpload,.variantSelectAgeLayout a.uploadDocs {
+    font-size: 12px;
+}
+.variantSelectAgeLayout {
+    padding: 0px 15px;
+}
+.downloadImageDone > p{
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    color: #666666;
+}
+#greyIbfoBlock-mt100 {
+    margin-top: -100px;
+    height: fit-content;
+}
+p.textAdressProof {
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+p.testText {
+    font-size: 12px;
+    line-height: 117%;
+    text-align: center;
+    color: #333333;
+    max-width: 175px;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+p.textCheckDetails {
+    font-size: 14px;
+    line-height: 10px;
+    color: #222222;
+}
+
+p.textCheckDetails2 {
+    font-size: 14px;
+    line-height: 117%;
+    color: #666666;margin-top: 0;
+    max-width: 500px;
+    font-weight: 300;
+}
+p.textCheckDetails2  > span {
+    font-weight: 400;
+}
+p.textCheckDetails,p.textCheckDetails2, div.textCheckDetails2 {
+    margin-left: 130px;
+}
+div.textCheckDetails2 >p.textCheckDetails2 {
+    margin-left: 0;
+}
+p.selectDate {
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: -0.0857143px;
+    color: #333333;
+    margin-bottom: 0;
+}
+p.selectDate >img {
+    margin-right: 5px;
+    margin-top: -2px;
+    margin-bottom: 0;
+}
+div.radiusDate {
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: fit-content;
+}
+div.radiusDate > p{
+    font-size: 13px;
+    line-height: 9px;
+    letter-spacing: -0.0857143px;
+    color: #808080;
+    margin-bottom: 0;
+}
+.ml-5 {
+    margin-left: 130px;
+}
+p.smallDate {
+    font-size: 12px;
+    line-height: 9px;
+    letter-spacing: -0.0857143px;
+
+    color: #979797;
+    font-weight: 300;
+}
+img.fail {
+    width: 114px;
+    height: 114px;
+    position: relative;
+    top: -62px;
+}
+h2.titleFail {
+    font-size: 27px;
+line-height: 130%;
+/* or 35px */
+
+text-align: center;
+letter-spacing: 0.01em;
+
+color: #333333;
+font-weight: 700;
+position: relative;
+    top: -62px;
+    margin-top: 10px;
+    margin-bottom: 0!important;
+}
+h2.titleFail>span {
+    font-weight: 300;
+}
+p.textFail {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    max-width: 350px;
+    font-weight: 300;
+}
+p.failTextUnderBtn {
+    font-size: 14px;
+    line-height: 117%;
+    font-weight: 300;    
+    color: #666666;
+    margin-top: 3px;
+}
+.leftColumn, .rightColumn {
+    width: 45%;
+}
+a.pdfDownload >img {
+    margin-right: 3px;
+}
+a.pdfDownload {
+    font-size: 14px;
+    line-height: 120%;
+    color: #0072BC;
+    text-decoration: none;
+}
+a.pdfDownload:hover {
+    color: #0072BC;
+    text-decoration: underline;
+}
+.leftColumn {
+    margin-left: 30px;
+}
+.greyRadiusBlock3 > p {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.0857143px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+a.viewDetail {
+    font-size: 12px;
+    line-height: 120%;
+    color: #0072BC;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+a.viewDetail:hover {
+    color: #0072BC!important;
+    text-decoration: underline;
+}
+h4.appTracker {
+    font-size: 16px;
+    line-height: 120%;
+    color: #0072BC;
+    margin-bottom: 3px;
+}
+.appTracker > img {
+    margin-right: 7px;width: 55px;
+    height: 55px;
+}
+.appTracker p {
+    font-size: 14px;
+    line-height: 140%;
+    color: #666666;
+    font-weight: 300;
+}
+#returnHome {
+    margin: 0 auto;
+}
+hr.mobileLine {
+    display: none;
+}
+p.idTranzaction > span {
+    font-size: 12px;
+}
+.flex33 {
+    justify-content: initial;
+}
+#first-checkMobile {
+    display: none;
+}
+/*
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #000;
+    font-weight: 400;
+    padding-bottom: 0px!important;
+}*/
 @media screen and (max-width:1400px) {
     .whiteLinks > a {
         font-size: 13px;
@@ -1997,6 +2910,12 @@ a.questChoise {
     }
 }
 @media screen and (max-width:992px) {
+    #whiteHeaderBlock9 {
+        width: fit-content;
+    }
+    .whitePopupBlock,.popupBlock {
+        min-width: calc(100vw - 60px);
+    }
     .imageMobNone {
         display: none;
     }
@@ -2023,7 +2942,7 @@ a.questChoise {
         width: 100%;
     }
     h2.title,h2.title>span {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 400;
     }
     
@@ -2326,8 +3245,8 @@ input.call2 {
     font-weight: 200;
 }
 
-.checkboxCall {
-    width: 100%;
+div.checkboxCall {
+    width: 100%!important;
 }
 
 p.callCheckText {
@@ -2365,9 +3284,445 @@ a.rightBtnSlider,a.leftBtnSlider {
 section.sliderChoose {
     overflow-x: hidden;
 }
-
+.whitePopupBlock{
+    display: flex;
+    flex-wrap: wrap;
 }
+div#whiteHeaderBlock7 {
+    padding: 25px;
+}
+input.head,select.education {
+    width: 98%;
+}
+}
+
 @media screen and (max-width:420px) {
+    button#returnHome {
+        font-size: 14px;
+    }
+    
+    .greyBorederCheck {
+        padding: 30px 10px;
+    }
+    .leftColumn, .rightColumn {
+        width: 100%;
+        margin: 0;
+    }
+    
+    p.textClockOption,.clockOption {
+        z-index: 1234;
+    }
+    p.textAroundchecboxInput {
+        font-size: 12px;
+    }
+    .greyBorederCheck.d-flex.align-items-start.mb-4.pb-4 {
+        width: -webkit-fill-available;
+    }
+    input.head {
+        margin-bottom: 10px;
+    }
+    p.textCheckDetails, p.textCheckDetails2, div.textCheckDetails2 {
+        margin-left: 0;
+        font-size: 12px;
+    }
+    p.accordionTitle {
+        font-size: 14px;
+    }
+    
+    div.accordion {padding: 10px 20px;}
+    .greyRadiusBlock.d-flex.flex-column {
+    min-height: 130px;
+    margin-top: 0px;
+}
+.variantSelectAgeLayout {
+    padding: 0px;
+}
+.variantSelectAgeLayout {
+    padding: 0px;
+}
+
+p.inputVariantText {
+    font-size: 12px;
+}
+
+.variantSelectAgeLayout p.orUpload, .variantSelectAgeLayout a.uploadDocs {
+    font-size: 10px;
+}
+p.textAdressProof {
+    font-size: 14px;
+    line-height: 16px;
+}
+    .yesAnswer {
+        margin: 10px 0 ;
+    }
+    .greyRediusBlock {
+        margin: 20px;
+    }
+    
+    a.linkUnderTitle {
+        font-size: 12px;
+    }
+    
+    div.otp100 {
+        width: calc(100vw - 30px);
+    }
+    
+    div#whiteHeaderBlock8 {
+        padding-bottom: 15px;
+    }
+    p.otpText {
+        font-size: 12px;
+    }
+    
+    div#whiteHeaderBlock8 {
+        min-height: 200px;
+    }
+    div#whitePopupBlock501588 > img {
+        width: 100%;
+    }
+    select.education {
+        font-size: 12px;
+    }
+    p.detailsBankText, p.or,.proceedToBankDeatails {
+        font-size: 12px;
+    }
+    #flex502{
+        margin-top: 5px;
+    }
+    
+    h2.popupCheckTitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    div#whitePopupBlock501588 {
+        padding:20px;
+    }
+    
+    div#popupBlock32 {
+        width: calc(100% - 30px);
+    }
+    
+    p.questionWhiteBlock {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    input#head3 {
+        margin: 5px 0;
+    }
+    a.editInformation {
+        font-size: 12px;
+    }
+    p.textRadio {
+        font-size: 14px;
+    }
+    p.textQuestionBlock {
+        font-size: 12px;
+    }
+    
+    p.yesText {
+        font-size: 14px;
+    }
+    
+    p.underQuestionAnswer {
+        font-size: 12px;
+    }
+    a.documentsOption {
+        font-size: 12px;
+    }
+    p.optionText {
+        font-size: 12px;
+    }
+    .saleGreenBlock2 > p, .saleGreenBlock3 > p {
+        padding: 0px 15px;
+    }
+    .saleGreenBlock > p, .saleGreenBlock2 > p, .saleGreenBlock3 > p {
+        font-size: 10px;
+    }
+    .greyBorederCheck > img {
+        width: 36px;
+        height: 36px;
+    }
+    #first-checkMobile {
+        display: flex;
+    }
+    img.checkOption {
+        display: none;
+    }
+    
+    p.optionText {
+        width: fit-content;
+    }
+    
+    img.smallInfo {
+        display: none;
+    }
+    
+    img.clockOption {
+        position: absolute;
+        bottom: 7px;
+        right: 65px;
+    }
+    
+    p.textClockOption {
+        position: absolute;
+        bottom: 6px;
+        right: 25px;
+    }
+    p.yelowText {
+        font-size: 10px;
+    }
+    
+    div#whiteHeaderBlock5 {
+        padding: 15px;
+    }
+    
+    .yelowBorderBlock.d-flex {
+        padding: 2px 6px!important;
+    }
+    #whiteHeaderBlock7 >h2.title, #whiteHeaderBlock7 >h2.title>span {
+        font-size: 18px;
+    }
+    input.head {margin-top: 5px;}
+    hr.mobileLine {
+        display: flex;
+    }
+    /* 
+    .plansLayout {
+    /* flex-wrap: wrap; 
+    flex-direction: row;
+}
+.plansLayout.d-flex.flex-row {
+    box-sizing: border-box;
+    width: 100%;
+    white-space: nowrap;
+    display: flex!important;
+    flex-wrap: wrap;
+    flex-grow: 2;
+} */
+a.questChoise {
+    padding-right: 0px;
+}
+.customerChoiseLayout.d-flex.gap-4 {
+    flex-wrap: wrap;
+}
+
+.leftCustomerChoise,.rightCustomerChoise {
+    width: 100%;
+    margin: 0;
+}
+
+.leftCustomerChoise {
+    margin: 0;
+}
+
+.leftCustomerChoise img,.rightCustomerChoise img {
+    width: 47px;
+    height: 47px;
+}
+a.downloadingAck {
+    font-size: 14px;
+}
+
+h2.continueToPay {
+    font-size: 20px;
+}
+
+p.textLightPAyOk {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+p.mustFill {
+    font-size: 12px;
+}
+.benefitsBlock {
+    flex-wrap: wrap;
+    width: 50%;
+}
+div.radiusDate {
+    padding: 9px 12px;
+}
+.smallDateGroup {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+p.textUnderTitle {
+    font-size: 14px;
+}
+p#choiceText2 {
+    font-size: 12px;
+}
+#textPlans2 {
+    font-size: 11px;
+}
+button#proceedToPay {font-size: 14px;padding: 10px 30px;}
+div.plansLayout {
+    gap: 20px;
+}
+#saleGreenBlock2 {
+    position: relative;
+    margin-bottom: -28px;
+}
+.getMoney {
+    margin-right: 7px;
+}
+.plansLayout.plansLayout2 {
+    padding: 25px 0px;
+}
+div#radiusPlansBlock100 {
+    padding: 15px;
+}
+
+p#titlePlans3 {
+    line-height: 16px;
+    font-size: 13px;
+}
+
+.getMoney {
+    width: 34px;
+    height: 34px;
+}
+
+p#textPlans3 {
+    font-size: 10px;
+}
+
+p#textPlans4 {
+    font-size: 12px;
+}
+h2.titleFail.mb-5 {
+    font-size: 24px;
+}
+
+h2.titleFail>span {
+    font-size: 20px;
+}
+
+p.textFail {
+    font-size: 14px;
+}
+
+button#proceedToPay2 {
+    font-size: 14px;
+}
+
+p.failTextUnderBtn {
+    font-size: 12px;
+}
+h1#head3 {
+    font-size: 18px;
+}
+div#whiteHeaderBlock6>div {align-items: flex-start!important;}
+.rightWhiteBlok {
+    width: 100%;
+}
+
+.horizontLinePlanPrice {
+    display: none;
+}
+.leftWhiteBlokChild {
+    white-space: initial;
+    width: 45%;
+    padding-right: 2%;
+}
+
+.columnsWhiteBlock.d-flex.flex-wrap {
+    width: 100%;
+}
+
+.leftWhiteBlok {
+    width: 100%;
+}
+
+#mobileColumn {
+    flex-direction: column!important;
+}
+.leftWhiteBlok,.rightWhiteBlok {
+   padding: 0;
+}
+    h3.pricePlan {
+        font-size: 18px;
+    }
+    .radiusPlansBlock {
+        width: 48%;
+    }
+    
+    div#smallWidthPlan {
+        width: 100%;
+        margin: 0;
+        flex-direction: row!important;
+    }
+    
+    #smallWidthPlan p.titlePlans {
+        margin-bottom: 0px!important;
+    }
+    
+    #smallWidthPlan img.activeCheck {
+        margin-bottom: 0px!important;
+        margin-left: 5px;
+        width: 22px;
+        height: 22px;
+    }
+    
+    .saleGreenBlock2 > p, .saleGreenBlock > p {
+        font-size: 9px;
+    }
+    
+    div#saleGreenBlock1 {
+        padding: 0px 10px;
+    }
+    div#whiteHeaderBlock2\ whiteHeaderBlock4 {
+        padding: 10px;
+    }
+    h1.popupTitle {
+        text-align: center;
+        font-size: 16px;
+    }
+    div#saleGreenBlock2 {
+        width: 105%;
+    }
+    h2.title2 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    div#saleGreenBlock2 {
+        padding: 5px 15px;
+    }
+    
+    .saleGreenBlock2 > p, .saleGreenBlock > p {
+        line-height: 5px;
+    }
+    div.blackCircleBack {
+        width: 380px;
+        height: 410px;
+        top: -185px;
+        right: -96px;
+    }
+    
+    .blackCircleBack > p {
+        top: 317px;
+        position: relative;
+        font-size: 12px;
+        width: 250px;
+        right: -36px;
+    }
+    
+    button.whiteBorder {
+        top: 317px;
+        position: relative;
+        font-size: 12px;
+        width: 250px;
+        right: -110px;
+        width: 95px;
+        font-size: 11px;
+        height: 22px;
+        padding: 3px 16px;
+    }
+    .infoBlock {
+        margin-left: 65px;
+    }
     div#aboutPlanAbsolute2 {
         top: 470px;
     }
@@ -2413,7 +3768,7 @@ section.sliderChoose {
     }
     h2.title {
         color: #333333;
-        font-size: 14px;
+        font-size: 18px;
     }
     .rightMobileMenu {
         display: flex;

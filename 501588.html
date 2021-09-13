@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+    <div class="popupLayout d-flex justify-content-center align-items-center">
+        <div id="popupBlock32" class="popupBlock d-flex flex-column">
+            <a href="#" class="closeBtn">
+                <img src="img/codicon_close.png" alt="">
+            </a>
+            <div id="whitePopupBlock501588" class="whitePopupBlock d-flex flex-column justify-content-center align-items-center">
+                <h2 class="popupCheckTitle">Please refer your bank cheque. Here is your IFSC code</h2>
+                <img src="img/HDFC_2 1.png" alt="">
+                <p class="or">OR</p>
+                <p class="detailsBankText">Give us your bank details, we will fetch IFSC code for you.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-center justify-content-start  gap-5">
+                    <input class="head" type="text" placeholder="Bank name">
+                    <input class="head" type="text" placeholder="Branch name">
+                </div>
+                <button id="proceedToBankDeatails" class="orangeBtn">PRoceed to bank details</button>
+            </div>
+        </div>
+    </div>
     <header class="blueHeaderTitle">
         <div class="container">
             <div class="row">
@@ -36,7 +54,7 @@
                 <div class="col-md-12">
                     <a href="#" class="arrowLeftHead"><img src="img/arrowLeftHead.png" alt=""></a>
                     <div class="d-flex userWay justify-content-center">
-                        <div id="doneLine2" class="doneLine"></div>
+                        <div class="doneLine"></div>
                         <div class="dashLine"></div>
                         <div id="stepWay1" class="stepWay d-flex flex-column justify-content-center">
                             <img src="img/way1.png" alt="" class="way1">
@@ -44,7 +62,7 @@
                             <p class="textWay">2 Min</p>
                         </div>
                         <div id="stepWay2" class="stepWay d-flex flex-column justify-content-center">
-                            <img src="img/way1.png" alt="" class="way1">
+                            <img src="img/way2.png" alt="" class="way1">
                             <p class="titleWay active">Customize Plan</p>
                             <p class="textWay">3 Min</p>
                         </div>
@@ -60,110 +78,168 @@
                         </div>
                     </div>
                 </div>
-                    <h1 id="head3" class="head">Hi Vjiendra, you are just one step away from securing your future</h1>
-                <div class="offset-md-1 col-md-10">
-                    <div id=" whiteHeaderBlock5" class="whiteHeaderBlock3">
-                        <div id="mobileColumn" class="d-flex justify-content-around">
-                            <div class="leftWhiteBlok">
-                                <div class="titleWhiteBlock">
-                                    <h2 class="titleWhiteBlock">Policy details</h2>
-                                </div>
-                                <div class="columnsWhiteBlock d-flex flex-wrap">
-                                    <div class="leftWhiteBlokChild mb-3">
-                                        <p class="titleWhiteBlock">Policy holder’s name</p>
-                                        <p class="subtitleWhiteBlock">Vijendra Ramdas Patil</p>
-                                    </div>
-                                    <div class="leftWhiteBlokChild mb-3">
-                                        <p class="titleWhiteBlock">Plan name</p>
-                                        <p class="subtitleWhiteBlock">Bajaj Allianz Life Smart Protect Goal</p>
-                                    </div>
-                                    <div class="leftWhiteBlokChild mb-3">
-                                        <p class="titleWhiteBlock">Total cover</p>
-                                        <p class="subtitleWhiteBlock">₹1 crore</p>
-                                    </div>
-                                    <div class="leftWhiteBlokChild mb-3">
-                                        <p class="titleWhiteBlock">Policy duration</p>
-                                        <p class="subtitleWhiteBlock">85 years</p>
-                                    </div>
-                                    <div class="leftWhiteBlokChild mb-3">
-                                        <p class="titleWhiteBlock">Plan variant </p>
-                                        <p class="subtitleWhiteBlock">Cover for life</p>
-                                    </div>
-                                    <div class="leftWhiteBlokChild mb-3">
-                                        <p class="titleWhiteBlock">Premium paying duration</p>
-                                        <p class="subtitleWhiteBlock">30 years</p>
-                                    </div>
-                                    <div class="leftWhiteBlokChild">
-                                        <p class="titleWhiteBlock">Premium frequency</p>
-                                        <p class="subtitleWhiteBlock">Yearly</p>
+                <div class="offset-md-1 col-md-7">
+                    <h1 id="head2" class="head">Hi Vijendra, <span> Cover for Life </span> is the suitable variant for you                    </h1>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="headLinksUnderline">Why this?</a>
+                        <a href="#" class="headLinksUnderline">View other variants</a>
+                    </div>
+                </div>
+                <div class="offset-md-1 col-md-7">
+                    <div id="whiteHeaderBlock2 whiteHeaderBlock4" class="whiteHeaderBlock">
+                        <div class="d-flex justify-content-center ">
+                            <div class="headDotsTop"></div>
+                            <div class="headDotsTop"></div>
+                            <div class="headDotsTop active"></div>
+                            <div class="headDotsTop"></div>
+                        </div>
+                        <h2 class="title2"><span>How would you prefer your <b> Medical Test</b></span></h2>
+                        <div class="d-flex justify-content-center">
+                            <div class="plansLayout plansLayout2 d-flex flex-column">
+                                <div id="radiusPlansBlock100" class="radiusPlansBlock active d-flex align-content-left justify-content-center flex-column">
+                                    <div class="textPlansPremium d-flex">
+                                        <img id="walletPremiunBlock" src="img/disabled-person 1.png" alt="" class="getMoney">
+                                        <div>
+                                            <p id="titlePlans3" class="titlePlans">Accidental total permenant disability  <img style="margin-left: 5px;" src="img/info.svg" alt=""> </p>
+                                            <p id="textPlans2" class="titlePlans">UIN: 12134567890</p>
+                                            <p id="textPlans3" class="titlePlans">Get additional sum assured on total permanent disability</p>
+                                            <p id="textPlans4" class="titlePlans">Get additional coverage of  <span><u>₹1 Crore</u></span> for just <span>₹800/Yr</span></p>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center flex-right ">
+                                            <img src="img/akar-icons_circle-check-fill.png" alt="" id="choiceImg25" class="choiceImg">
+                                            <p id="choiceText2" class="choiceText">Yes, I want</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div id="radiusPlansBlock100" class="radiusPlansBlock d-flex align-content-left justify-content-center flex-column">
+                                    <div class="textPlansPremium d-flex">
+                                        <img id="carPremiunBlock" src="img/003-car-accident.png" alt="" class="getMoney">
+                                        <div>
+                                            <p id="titlePlans3" class="titlePlans">Accidental death<img style="margin-left: 5px;" src="img/info.svg" alt=""> </p>
+                                            <p id="textPlans2" class="titlePlans">UIN: 12134567890</p>
+                                            <p id="textPlans3" class="titlePlans">Get additional sum assured on death due to accident </p>
+                                            <p id="textPlans4" class="titlePlans">Get additional coverage of  <span><u>₹1 Crore</u></span> for just <span>₹800/Yr</span></p>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center flex-right ">
+                                            <img src="img/akar-icons_circle-check.png" alt="" id="choiceImg25" class="choiceImg">
+                                            <p id="choiceText2" class="choiceText">Yes, I want</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="radiusPlansBlock100" class="radiusPlansBlock d-flex align-content-left justify-content-center flex-column">
+                                    <div class="textPlansPremium d-flex">
+                                        <img id="walletPremiunBlock" src="img/005-wallet.png" alt="" class="getMoney">
+                                        <div>
+                                            <p id="titlePlans3" class="titlePlans">Waiver of premium<img style="margin-left: 5px;" src="img/info.svg" alt=""> </p>
+                                            <p id="textPlans2" class="titlePlans">UIN: 12134567890</p>
+                                            <p id="textPlans3" class="titlePlans">Get additional sum assured on total permanent disability</p>
+                                            <p id="textPlans4" class="titlePlans">Get for just <span>₹800/Yr</span></p>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center flex-right ">
+                                            <img src="img/akar-icons_circle-check.png" alt="" id="choiceImg25" class="choiceImg">
+                                            <p id="choiceText2" class="choiceText">Yes, I want</p>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
-                            <div>
-                                <div class="centerLineWhiteBlock">
+                        </div>
+
+                        <div class="offset-md-1 col-md-10">
+                            <div class="d-flex flex-column ">
+                                <button id="proceedToPay" class="orangeBtn">PROCEED TO PAY</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="whiteHeaderBlock2" class="whiteHeaderBlock blueBack">
+                        <h2 class="typePlan">Premium</h2>
+                        <div class="d-flex justify-content-center flex-column">
+                            <div id="plansLayout2" class="plansLayout d-flex flex-row align-bottom justify-content-center">
+                                <div class="d-flex flex-row align-baseline">
+                                    <h2 class="currentPrice">₹12,000<span>/Yr</span></h2>
                                 </div>
+                                <p class="crossedOutText">₹15,000 </p>
+                                
                             </div>
-                            <hr class="mobileLine">
-                            <div class="rightWhiteBlok">
-                                <div class="titleWhiteBlock">
-                                    <h2 class="titleWhiteBlock">Premium details</h2>
-                                </div>
-                                <div class="detailsPlanBlock">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="titleDetailPlan">Base premium</p>
-                                        <p class="priceDetailPlan">₹ 900</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="titleDetailPlan">GST</p>
-                                        <p class="priceDetailPlan">₹ 100</p>
-                                    </div>
-                                    <div class="titleWhiteBlock">
-                                        <h2 class="miniTitleWhiteBlock">Added extra benefit</h2>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="titleDetailPlan">Base premium</p>
-                                        <p class="priceDetailPlan">₹ 900</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="titleDetailPlan">GST</p>
-                                        <p class="priceDetailPlan">₹ 100</p>
-                                    </div>
-                                    <div class="horizontLinePlanPrice"></div>
-                                    <hr class="mobileLine">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="titleDetailPlanTotal">GST</p>
-                                        <p class="priceDetailPlanTotal">₹ 1,200</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex justify-content-start">
+                                <p class="textUnderPrice">Incl. Gst</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a class="priceBreakup">Price breakup</a>
+                            </div>
+                        </div>
+                        <div class="offset-md-1 col-md-10">
+                            <div class="d-flex justify-content-end">
+                                <a href="" class="btnEdit"><img src="img/edit.png" alt=""></a>
+
+                            </div>                            
+                        </div>
+                    </div>
+                    <div id="whiteHeaderBlock3" class="whiteHeaderBlock2 whiteBack">
+                        <h2 class="advPlan d-flex justify-content-center">Cover for Life</h2>
+                        <div class="inputCoverLife d-flex justify-content-center flex-row">
+                            <div class="d-flex flex-column inputCoverLife">
+                                <form class="" action="#">
+                                    <p class="inputTitle">Cover for you </p>
+                                    <p><select class="FreeQuote" name="list1">
+                                        <option>1 Crore</option>
+                                        <option>Option</option>
+                                        <option>Textarea</option>
+                                        <option>Label</option>
+                                        <option>Fieldset</option>
+                                        <option>Legend</option>
+                                       </select>
+                                    </p>
+                                    <p class="inputTitle">Cover till age </p>
+                                    <p><select class="FreeQuote" name="list1">
+                                        <option>1 Crore</option>
+                                        <option>Option</option>
+                                        <option>Textarea</option>
+                                        <option>Label</option>
+                                        <option>Fieldset</option>
+                                        <option>Legend</option>
+                                       </select>
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="d-flex flex-column inputCoverLife">
+                                <form class="" action="#">
+                                    <p class="inputTitle">Premium cycle</p>
+                                    <p><select class="FreeQuote" name="list1">
+                                        <option>1 Crore</option>
+                                        <option>Option</option>
+                                        <option>Textarea</option>
+                                        <option>Label</option>
+                                        <option>Fieldset</option>
+                                        <option>Legend</option>
+                                       </select>
+                                    </p>
+                                </form>
                             </div>
                             
+                            
                         </div>
-                        
-                    </div>
-                </div>
-                <div class="offset-md-1 col-md-10">
-                    <div id="whiteHeaderBlock6" class="whiteHeaderBlock3">
-                        <div class="d-flex align-items-center flex-row">
-                            <img src="img/vscode-icons_file-type-pdf.png" alt="" class="download">
-                            <p class="downloadText">You can <a href="" class="downloadText">Download</a> Benefit Illustration. This document is shared to your registered email ID vijendra@gmail.com and mobile number 91xxxxxx5238.</p>
-                        </div>
-                        <div class="d-flex align-items-center flex-row" style="margin-top: 5px;">
-                            <input type="checkbox" name="" id="" style="margin-left:5px;">
-                            <p class="checboxTextWhiteBlock">I declare that I have read the terms & conditions and understood the above Benefit Illustration. Total premium amout (Inclusive of GST)</p>
+                        <div class="d-flex flex-column inputCoverLife">
+                            <button class="orangeBtn">Update</button>
                         </div>
                     </div>
-                </div>
-                <div class="offset-md-1 col-md-10">
-                        <div class="d-flex align-items-center flex-row" style="margin-left:30px; margin-top: 25px;">
-                            <input type="checkbox" name="" id="" style="margin-left:5px;">
-                            <p class="checboxTextWhiteBlock">I declare that I have read the terms & conditions and understood the above Benefit Illustration. Total premium amout (Inclusive of GST)</p>
+                    <div class="d-flex advUnderBlock justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="img/shild.png" alt="">
+                            <div class="d-flex flex-column">
+                                <h2 class="advUnderBlock">98<span>.02%</span></h2>
+                                <p class="advUnderBlock">Claim settlement ratio</p>
+                            </div>
                         </div>
-                </div>
-                
-                <div class="offset-md-1 col-md-10">
-                    <div class="d-flex flex-column ">
-                        <button id="proceedToPay2" class="orangeBtn">PROCEED TO PAY</button>
-                    </div>                            
+                        <div class="d-flex align-items-center">
+                            <img id="advUnderBlock2" src="img/calendar.png" alt="">
+                            <div class="d-flex flex-column">
+                                <h2 class="advUnderBlock">1<span>day</span></h2>
+                                <p class="advUnderBlock">Claim approval</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
